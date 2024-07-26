@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="team-container"> 
+        <div class="team1">
+            <h1 id="team1">Lakers</h1>
+            <label id="score-team1">0</label>
+            <div class="button-team1">
+                <button onclick="updatePoints('team1', 1)">+1</button>
+                <button onclick="updatePoints('team1', 2)">+2</button>
+                <button onclick="updatePoints('team1', 3)">+3</button>
+            </div>
+        </div>
+        <button onclick="restart()">NEW GAME</button>
+
+        <div class="team2">
+            <h1 id="team2">Ginebra</h1>
+            <label id="score-team2">0</label>
+            <div class="button-team2">
+                <button onclick="updatePoints('team2', 1)">+1</button>
+                <button onclick="updatePoints('team2', 2)">+2</button>
+                <button onclick="updatePoints('team2', 3)">+3</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <button onclick="highlightTheLeader()">Highlight the leader</button>
+  <br>
+    <h1 id="game-lead"></h1>
+</body>
+</html>
